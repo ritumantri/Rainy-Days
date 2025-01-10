@@ -13,7 +13,7 @@
             overflow: hidden;
         }
 
-        #home-btn {
+        .home-btn {
             position: fixed;
             top: 10px;
             left: 10px;
@@ -33,18 +33,12 @@
             transition: background-color 0.3s ease;
         }
 
-        a img {
-            width: 25px;
-            height: 25px;
-            margin-left: 10px;
-        }
-
         a:hover {
             background-color:#ff4d00;
             color: #fff;
         }
         
-        #snow{
+        .snow{
             background: none;
             background-image: url('../images/hearts-1.png'), url('../images/hearts-2.png'), url('../images/hearts-3.png');
             height: 100%;
@@ -53,36 +47,16 @@
             top: 0;
             width: 100%;
             z-index:1;
-            -webkit-animation: snow 1000s linear infinite;
-            -moz-animation: snow 1000s linear infinite;
-            -ms-animation: snow 1000s linear infinite;
             animation: snow 1000s linear infinite;
-            -webkit-transform: translate3d(0,0,0);
-            -moz-transform: translate3d(0,0,0);
-            -ms-transform: translate3d(0,0,0);
-            -o-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
         }
         @keyframes snow {
           0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
           100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
         }
-        @-moz-keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }
-        @-webkit-keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }
-        @-ms-keyframes snow {
-          0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-          100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
-        }   
     </style>
 </head>
 <body>
-    <div id="home-btn"> <a href="../">Home</a><br> </div>
-    <div id="snow"></div>
+    <div class="home-btn"> <a href="../">Home</a><br> </div>
+    <div class="snow"></div>
 </body>
 </html>  
